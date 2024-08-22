@@ -5,46 +5,6 @@
   text-align: center;
 }
 
-.container{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: auto;
-}
-
-#heading{
-  color: #E7AD5C;
-  font-size: 80px;
-}
-.containt{
-  width: 500px;
-  margin: auto;
-  padding: 50px;
-  color: #212121;
-}
-.containt h1{
-  color: #E7AD5C;
-}
-.containt p{
-  font-size: 18px;
-}
-
-
-.image{
-   display: flex;
-   width: 500px;
-  margin: auto;
-   transition-property: transform;
-   transition-duration: 0.3s;
-   transition-timing-function: ease;
-   transition-delay: 0s;
-}
-
-.image:hover{
-  transform: scale(1.04);
-}
-
-
 @keyframes slide {
   from {
       transform: translateX(0);
@@ -55,6 +15,7 @@
 }
 
 .logos {
+  display: flex;
   overflow: hidden;
   width: 100%;
   margin-top: 30px;
@@ -109,8 +70,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
-  margin-bottom: 300px;
+  margin-top: 100px;
+  margin-bottom: 200px;
 }
 @keyframes move {
   from {
@@ -121,15 +82,17 @@
   }
 }
 .hair-style-image{
+  display: flex;
   position: relative;
   width: 420px;
   height: 520px;
   margin: auto;
-  border: 3px solid #E7AD5C;
+  border: 3px solid #5a5a59;
   animation: 0.6s move linear;
 }
 
 .hair-style-image img{
+  display: flex;
   position: absolute;
   width: 420px;
   height: 520px;
@@ -143,14 +106,16 @@
 }
 
 .hair-style-image2{
+  display: flex;
   position: relative;
   width: 420px;
   height: 520px;
   margin: auto;
-  border: 3px solid #E7AD5C;
+  border: 3px solid #5a5a59;
   transition: 0.5s;
 }
 .hair-style-image2 img{
+  display: flex;
   position: absolute;
   width: 420px;
   height: 520px;
@@ -174,6 +139,8 @@
 }
 
 .hair-style-section{
+  display: flex;
+  flex-direction: column;
   width: 500px;
   margin: auto;
   padding: 50px;
@@ -214,6 +181,7 @@
 
 #team{
   color:#E7AD5C;
+  margin-top: 10px;
 }
 
 .logo-head{
@@ -229,10 +197,10 @@
 }
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:885px) {
 
   #root {
-    max-width: 768px;
+    max-width: 885px;
     margin: 0 auto;
     padding: 0.5rem;
     text-align: center;
@@ -279,19 +247,20 @@
   }
 
   .hair-style{
-    /* margin-top: 20px;
-    margin-bottom: 50px; */
+   display: flex;
     margin: auto;
     padding: 30px;
   }
   
   .hair-style-image{
+    display: flex;
     position: relative;
     width: 220px;
     height: 320px;
   }
   
   .hair-style-image img{
+    display: flex;
     position: absolute;
     width: 220px;
     height: 320px;
@@ -304,11 +273,13 @@
   }
   
   .hair-style-image2{
+    display: flex;
     position: relative;
     width: 220px;
     height: 320px;
   }
   .hair-style-image2 img{
+    display: flex;
     position: absolute;
     width: 220px;
     height: 320px;
@@ -323,22 +294,26 @@
   }
   
   .hair-style-section{
+    display: flex;
     width: 400px;
     margin: 0px 40px;
     padding: 40px;
   }
   .hair-style-section h2{
     font-weight: 600;
+    margin: auto;
   }
   .hair-style-section h1{
     font-size: 25px;
     font-weight: 400;
+    margin: auto;
   }
   .hair-style-section p{
     font-size: 18px;
   }
   
   .hair-style-section button{
+
     width: 120px;
     padding: 10px;
     font-size: 15px;
@@ -359,81 +334,80 @@
 }
 
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 428px) {
   #root {
-    max-width: 390px;
+    max-width: 428px;
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
   }
   
   #heading{
-    margin-left: 50%;
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 40px;
-  }
-  .container{
-    display: flex;
-    flex-direction: column;
-  }
-  .containt{
-    width: 400px;
-    padding: 30px;
-  }
-
-  .image img{
-    margin: auto;
-    width: 400px;
-    height: 350px;
+    font-size: 30px;
   }
    
   .logos {
-    margin-top: 20px;
-    padding: 20px 0;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 5px;
   }
    
   .logos:before,
   .logos:after {
-    width: 150px;
+    width: 60px;
   }
  
   .logo-slide img {
-   height: 100px;
-   margin:  0 10px;
+   height: 150px;
+   margin:  0 5px;
   }
 
   .hair-style{
     display: flex;
     flex-direction: column;
     margin: auto;
-    padding: 50px;
+    padding: auto;
+    margin-bottom: 10px;
+    padding: 20px;
   }
   
   .hair-style-image{
+    display: flex;
     position: relative;
-    width: 320px;
+    width: 300px;
     height: 220px;
+    margin: 30px;
   }
   
   .hair-style-image img{
+    display: flex;
     position: absolute;
-    width: 320px;
+    width: 300px;
     height: 220px;
-    top: 30px;
-    left: 30px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .hair-style-image img:hover{
+    transform: scale(1.03);
   }
   
   .hair-style-image2{
+    display: flex;
     position: relative;
-    width: 320px;
+    width: 300px;
     height: 220px;
   }
   .hair-style-image2 img{
+    display: flex;
     position: absolute;
-    width: 320px;
+    width: 300px;
     height: 220px;
-    top: 30px;
-    right: 30px;
+    top: 10px;
+    right: 10px;
     transition: 0.3s;
   }
   
@@ -443,37 +417,40 @@
   }
   
   .hair-style-section{
-    width: 300px;
-    margin: auto;
-    padding: auto;
+    display: flex;
+    width: 100%;
   }
   .hair-style-section h2{
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px;
   }
   .hair-style-section h1{
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
   }
   .hair-style-section p{
-    font-size: 18px;
+    font-size: 17px;
   }
   
   .hair-style-section button{
+    margin: auto;
     width: 120px;
     padding: 10px;
-    font-size: 15px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 600;
     transition: 0.5s;
   }
    
   #team{
     margin: auto;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 400;
+    margin-top: 50px;
   }
   
   .logo-head h1{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
   }
 }
